@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Chord AI</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; display: flex; justify-content: center; padding-top: 50px; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); width: 450px; text-align: center; }
+        input { width: 90%; padding: 12px; margin: 15px 0; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; }
+        /* Adjusted button margin now that select is gone */
+        button { background: #007bff; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; font-size: 16px; width: 100%; margin-top: 10px; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>🎵 YouTube Chord AI</h2>
+        <form action="/download" method="post">
+    <input type="text" name="url" placeholder="Paste YouTube Link Here" required>
+
+    <textarea 
+        name="lyrics" 
+        placeholder="Paste lyrics here (each line separated by Enter)"
+        rows="8"
+        style="width: 90%; padding: 12px; margin: 15px 0; border: 1px solid #ddd; border-radius: 8px; font-size: 14px;"
+        required>
+    </textarea>
+
+    <button type="submit">Analyze Song</button>
+</form>
+
+    </div>
+</body>
+</html>
